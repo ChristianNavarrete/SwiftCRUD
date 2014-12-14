@@ -9,5 +9,18 @@
 import UIKit
 
 class Shelf: NSObject {
-   
+    
+    var books:[Book] = []
+    var shelfName: String!
+    
+    init(shelfName:String) {
+        self.shelfName = shelfName
+        self.books = [Book]()
+    }
+    
+    func addNewBookWithTitle(bookTitle:String) {
+        let book:Book = Book(title: bookTitle)
+        book.enshelf(self)
+    }
+
 }

@@ -33,4 +33,8 @@ class SwiftLibraryTests: XCTestCase {
         }
     }
     
+    func testUnshelvesBook() {
+
+    }
+    
 }
